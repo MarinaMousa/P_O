@@ -1,0 +1,84 @@
+
+body {
+    background-color: black;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/back.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+.bg h2 {
+    position: relative;
+    color: var(--main-color);
+    -webkit-text-stroke: 2px #fff;
+    font-size: 10em;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+  .bg h2 {
+    font-size: 22vw;
+  }
+}
+.skewedOne {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: skewY(-15deg);
+    transform-origin: top left;
+}
+.skewedTwo {
+    position: absolute;
+    bottom: -100%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: skewY(15deg);
+    transform-origin: top right;
+}
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+
+section h2 {
+    color: var(--main-color);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+section p {
+    color: #878787;
+    font-size: 1.2em;
+}
+@media (max-width: 767px) {
+    section {
+        padding: 100px 40px;
+    }
+    section p {
+        font-size: 1em;
+    }
+}
+
+
+
