@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form</title>
+    <link rel="stylesheet" href="css/jQuery-svg-popup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="nav">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Eng
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </div>
+          <div class="btns">
+            <a class="btn contact"  href="contact.html">Contact</a>
+            <button type="button" class="button one btn" data-svg-popup="sc">Schedule Now</button>
+            <a class="btn contact"  href="#/">Call Us</a>
+          </div>
+          <div class="logo"><img src="images/IMG_2783.PNG" alt="">Bright White
+          </div>
+          <nav class="menu">
+              <header>Menu <span class="close">×</span></header>
+              <ol>
+                  <li class="menu-item"><a href="index.html">Home</a></li>
+                  <li class="menu-item"><a href="about.html">About</a></li>
+                  <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                  <li class="menu-item"><a href="team.html">Our Team</a></li>
+                  <li class="menu-item"><a href="FAQ.html">FAQ</a></li>
+                  <li class="menu-item"><a href="contact.html">Contact</a></li>
+              </ol>
+              <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+          </nav> 
+    </div>
+    <div id="sc">
+        <div class="svg-popup-content">
+            <a href="form.html">New Patient</a>
+            <a href="formTwo.html">Returning Patient</a>
+        </div>
+    </div> 
+      <!-- End Navbar -->
+
+      <!-- Background -->
+      <div class="backTwo">
+        <h1 class="title">Schedule An Appointment</h1>
+      </div>
+
+    <!-- Start Form -->
+
+    <div class="app">
+        <div class="container">
+            <div class="form">
+                    <form action="" id="form">
+                        <div class="birth-date">
+                            <h3>Date of Birth</h3>
+                            <div class="select">
+                                <select id="days">
+                                    <option value="">DD</option>
+                                </select>
+                                <select id="months" >
+                                    <option value="">MM</option>
+                                </select>
+                                <select id="years">
+                                    <option value="">YYYY</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="name">
+                            <input class="input-name one" type="text" placeholder="Last Name" name="name" required>
+                            <input class="input-name two" type="text" placeholder="First Name" name="name" required>
+                        </div>
+                        <input class="input" type="text" placeholder="Your Phone" name="mobile" required>
+                        <input class="input" type="email" placeholder="Your Email" name="email" required>
+                        <div class="date">
+                            <h3>Date</h3>
+                            <div class="data">
+                                <input type="date" name="date" id="" required>
+                                <select name="" id="time">
+                                    <option value="time">07:00AM - 07:30AM</option>
+                                    <option value="time">07:30AM - 08:00AM</option>
+                                    <option value="time">08:00AM - 08:30PM</option>
+                                    <option value="time">08:30AM - 09:00AM</option>
+                                    <option value="time">09:00AM - 09:30AM</option>
+                                    <option value="time">09:30AM - 10:00AM</option>
+                                    <option value="time">10:00AM - 10:30AM</option>
+                                    <option value="time">10:30AM - 11:00AM</option>
+                                    <option value="time">11:00AM - 11:30AM</option>
+                                    <option value="time">11:30AM - 12:00PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="reason">
+                            <h3>Reason for Your Visit</h3>
+                            <select name="" id="reason">
+                                <option >Exam & Cleaning</option>
+                                <option >Consultation</option>
+                                <option >Previously Discussed Treatment</option>
+                                <option >Restorative Dentistry OverView</option>
+                                <option >Bone Grafts</option>
+                                <option >Bridges</option>
+                                <option >Composite Fillings</option>
+                                <option >Crowns</option>
+                                <option >Dentures</option>
+                                <option >Implants</option>
+                                <option >Implant Supported Dentures</option>
+                                <option >Inlays And Onlays</option>
+                                <option >Post & Core</option>
+                                <option >Root Canals</option>
+                                <option >Virtual Visit</option>
+                                <option >Other</option>
+                            </select>
+                        </div>
+                        <textarea name="message" class="main-input" placeholder="Notes for the Doctor"></textarea>
+                        <input type="submit" value="Request Appointment">
+                    </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Form -->
+
+        <!-- Start Footer  -->
+<div class="footer">
+    <div class="container">
+        <div class="box hidden">
+            <h3>Bright White</h3>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>                     
+                </li>
+                <li>
+                    <a href="#" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>                       
+                </li>
+                <li>
+                    <a href="#" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>                      
+                </li>
+            </ul>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="box hidden">
+            <ul class="links">
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 1</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 2</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 3</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 4</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 5</a></li>
+            </ul>
+        </div>
+        <div class="box hidden">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Florida, USA</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                    <span>0123456789</span>
+                    <span>0112345678</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2023 Bright White All Rights Reserved</p>
+  </div>
+  <!-- End Footer  -->
+
+  
+  <a href="javascript:void(0);" id="backToTop" class="back-to-top">
+    <i class="arrow"></i><i class="arrow"></i>
+  </a>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/jQuery-svg-popup.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+
+    var years = document.querySelector('#years');
+    var months = document.querySelector('#months');
+    var days = document.querySelector('#days');
+
+    for ( let i = 2023; i >= 1923; i-- ) {
+        let year = document.createElement('option');
+        year.classList.add('year');
+        year.innerHTML = i;
+        years.appendChild(year);
+    };
+
+    for ( let j = 1; j <= 12; j++ ) {
+        let month = document.createElement('option');
+        month.classList.add('month');
+        month.innerHTML = j;
+        months.appendChild(month);
+    };
+
+    for ( let k = 1; k <= 31; k++ ) {
+        let day = document.createElement('option');
+        day.classList.add('day');
+        day.innerHTML = k;
+        days.appendChild(day);
+    };
+
+
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+</script>
+</html>

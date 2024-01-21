@@ -1,0 +1,274 @@
+body {
+  background-color: #ebecf0;
+}
+
+.back {
+  background: url(../images/form.jpg);
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.back::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.backTwo {
+  background: url(../images/form2.jpg);
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.backTwo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.back .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.backTwo .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 767px) {
+  .back .title {
+    font-size: 9vw;
+  }
+}
+.app {
+  padding-top: 200px;
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.app .container {
+    width: auto;
+    max-width: 700px;
+    margin: auto;
+}
+.form {
+  width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.form form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.form form .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.form form .city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.form form .city .state{
+  width: 20%;
+}
+.form form .city .zip{
+  width: 30%;
+}
+.form form .birth-date {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.form form .insurance-companies {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.form form .insurance-companies .companies {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 20px;
+  width: 100%;
+}
+.form form .insurance-companies .companies input {
+  width: 50%;
+}
+.form form .insurance-companies .companies #companies {
+  width: 50%;
+}
+.form form h3 {
+  font-size: 18px;
+    color: #616161;
+    text-align: left;
+}
+.form form select {
+  background-color: #ebecf0;
+  -moz-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  -webkit-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  border: 1px solid #a7a7a7;
+  padding: 12px;
+  height: 50px;
+  outline: none;
+  font-size: 14px;
+  color: #616161;
+}
+.form form .birth-date .select select {
+  margin-right: 10px;
+}
+.form form .date {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.form form .date .data {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+}
+.form form .date .data input {
+  width: 50%;
+  margin-right: 30px;
+}
+.form form .date .data #time {
+  width: 50%;
+}
+.form form input {
+  width: 100%;
+  padding: 12px;
+  height: 50px;
+  outline: none;
+  letter-spacing: -0.5px;
+  color: #616161;
+  border: 1px solid #a7a7a7;
+  display: block;
+  margin-bottom: 15px;
+  background-color: #ebecf0;
+  -moz-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  -webkit-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+}
+
+.form form input:focus,
+.form form textarea.main-input:focus {
+  outline: none;
+}
+
+.form form .reason {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form form .reason #reason {
+  width: 50%;
+}
+
+.form form textarea.main-input {
+  height: 90px;
+  width: 100%;
+  padding: 12px;
+  align-self: flex-start;
+  margin-bottom: 25px;
+  outline: none;
+  border: 1px solid #a7a7a7;
+  resize: none;
+  background-color: #ebecf0;
+  box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+}
+
+.form form .send {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.form form input[type="submit"] {
+  background-color: #ebecf0;
+  box-shadow: -6px -6px 10px white,
+              7px 7px 20px #3f415342;
+  padding: 12px;
+  width: 50%;
+  border: none;
+  /* border-radius: 10px; */
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  transition: var(--main-transition);
+}
+.form form input[type="submit"]:hover {
+  box-shadow: 4px 4px 4px #4d5a6b3b inset,
+              -6px -6px 15px white inset;
+  transform: translateY(2px);
+}
+@media (max-width: 500px) {
+  .form form input[type="submit"] {
+    font-size: 10px;
+    text-wrap: wrap;
+  }
+  .form form input {
+    font-size: 7px;
+    padding: 5px;
+  }
+  .form form select {
+    font-size: 7px;
+    padding: 5px;
+  }
+  .form form h3 {
+    font-size: 12px;
+  }
+}

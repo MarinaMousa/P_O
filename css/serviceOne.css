@@ -1,0 +1,139 @@
+.bg.one {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/about2.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.two {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/about3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.three {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/about4.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.four {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/doctor.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.five {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/clip1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.six {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/s1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.seven {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/s2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.eight {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/s3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.nine {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/clip3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.ten {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/about1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg.eleven {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/about2.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bg h2 {
+  position: relative;
+  color: var(--main-color);
+  -webkit-text-stroke: 1px #fff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+.bg h2 {
+  font-size: 8vw;
+}
+}
+@media (max-width: 500px) {
+.bg h2 {
+  font-size: 15vw;
+}
+}

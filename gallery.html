@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/jQuery-svg-popup.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Navbar -->
+    <div class="nav">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Eng
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </div>
+          <div class="btns">
+            <a class="btn contact"  href="contact.html">Contact</a>
+            <button type="button" class="button one btn" data-svg-popup="sc">Schedule Now</button>
+            <a class="btn contact"  href="#/">Call Us</a>
+          </div>
+        <div class="logo"><img src="images/IMG_2783.PNG" alt="">Bright White</div>
+        <nav class="menu">
+            <header>Menu <span class="close">×</span></header>
+            <ol>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                <li class="menu-item"><a href="team.html">Our Team</a></li>
+                <li class="menu-item"><a href="FAQ.html">FAQ</a></li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ol>
+            <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+        </nav>
+    </div> 
+    <div id="sc">
+        <div class="svg-popup-content">
+            <a href="form.html">New Patient</a>
+            <a href="formTwo.html">Returning Patient</a>
+        </div>
+    </div> 
+    <!-- End Navbar -->
+    <!-- Start Gallery -->
+    <div class="gallery">
+        <div class="container">
+            <div class="content">
+                <div class="text hidden">
+                    <h2 class="title">Our Beautiful Smiles</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, ipsa?</p>
+                </div>
+                <div class="image hidden">
+                    <img class="img" src="images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-container mySwiper hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to bottom, black, #2e8e98)'); color('#2e8e98');" src="images/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to top, black, #2e8e98)'); color('black');" src="images/2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to right, black, #2e8e98)'); color('#2e8e98');" src="images/3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to left, black, #2e8e98)'); color('black');" src="images/4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to bottom, black, rgb(199, 199, 199))'); color('#2e8e98');" src="images/5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to top, black, rgb(199, 199, 199))'); color('black');" src="images/6.png" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to right, black, rgb(199, 199, 199))'); color('#2e8e98');" src="images/7.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to left, black, rgb(199, 199, 199))'); color('black');" src="images/8.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to top, black, #2e8e98)'); color('#2e8e98');" src="images/9.jpg" alt=""></div>
+                    <div class="swiper-slide"><img onclick="smiles(this.src); colors('linear-gradient(to left, black, #2e8e98)'); color('black');" src="images/10.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gallery -->
+
+
+    <!-- Start Footer  -->
+<div class="footer">
+    <div class="container">
+        <div class="box hidden">
+            <h3>Bright White</h3>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>                     
+                </li>
+                <li>
+                    <a href="#" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>                       
+                </li>
+                <li>
+                    <a href="#" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>                      
+                </li>
+            </ul>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="box hidden">
+            <ul class="links">
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 1</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 2</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 3</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 4</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 5</a></li>
+            </ul>
+        </div>
+        <div class="box hidden">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Florida, USA</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                    <span>0123456789</span>
+                    <span>0112345678</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2023 Bright White All Rights Reserved</p>
+  </div>
+  <!-- End Footer  -->
+  
+  <a href="javascript:void(0);" id="backToTop" class="back-to-top">
+    <i class="arrow"></i><i class="arrow"></i>
+  </a>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/jQuery-svg-popup.js"></script>
+<script src="js/main.js"></script>
+<script>
+    let img = document.querySelector('.img');
+    let body = document.querySelector('body');
+    let title = document.querySelector('.title');
+
+    function smiles(smile){
+        img.src = smile;
+    }
+
+    function colors(color){
+        body.style.background = color;
+    }
+
+    function color(e){
+        title.style.color = e;
+    }
+
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        slidesPerGroup: 3,
+        //grabCursor: true,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+            delay: 2000,
+        },
+    });
+
+</script>
+</html>
